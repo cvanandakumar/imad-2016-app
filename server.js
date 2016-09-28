@@ -17,6 +17,10 @@ app.get('/article-two',function(req,res){
     res.send('This is for my second request');
 });
 
+app.get('/article-three',function(req,res){
+    res.send('now it is for my thirrd request response');
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

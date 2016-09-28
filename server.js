@@ -13,7 +13,9 @@ app.get('/article-one',function(req,res){
     res.send('This is the first request server');
 });
 
-
+app.get('/article-two',function(req,res){
+    res.send('This is for my second request');
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
